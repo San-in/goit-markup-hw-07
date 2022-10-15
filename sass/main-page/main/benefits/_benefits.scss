@@ -1,0 +1,28 @@
+.benefits {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: $bgColorGrey;
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+        line-height: calc(16 / 14);
+        text-transform: uppercase;
+        color: $textColorBold;
+    }
+}
+
+.benefits__item {
+    flex-basis: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+

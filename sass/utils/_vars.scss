@@ -6,6 +6,7 @@ $textColorMain: #757575;
 
 
 $bgColorAccent:#2196f3;
+$bgColorGrey: #f5f4fa;
 
 
 
@@ -37,4 +38,36 @@ $bgColorAccent:#2196f3;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
+}
+
+%btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    border-radius: 4px;
+    background-color: $bgColorAccent;
+}
+
+// Утилітні класи
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
