@@ -1,0 +1,17 @@
+.header {
+    border-bottom: 1px solid #ececec;
+    &__conteiner {
+        @include flex-center();
+    }
+    &__logo {
+        @extend %logo;
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        color: #000000;
+    }
+    &__text--accent {
+        color:$textColorAccent;
+    }
+}
+

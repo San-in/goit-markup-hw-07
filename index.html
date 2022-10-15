@@ -9,7 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,20 +18,22 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <div class="conteiner header-flex">
-        <a href="./index.html" class="header-logo logo"> <span class="accent">Web</span>Studio</a>
-        <nav class="header-navigation">
-          <ul class="header-navigation-list">
-            <li class="header-navigation-item">
-              <a href="./index.html" class="header-navigation-link hover-accent active">Студія</a>
+      <div class="conteiner header__conteiner">
+        <a href="./index.html" class="header__logo">
+          <span class="header__text--accent">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link active">Студія</a>
             </li>
-            <li class="header-navigation-item">
-              <a href="./portfolio.html" class="header-navigation-link hover-accent">Портфоліо</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
             </li>
-            <li class="header-navigation-item">
-              <a href="" class="header-navigation-link hover-accent">Контакти</a>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Контакти</a>
             </li>
           </ul>
         </nav>

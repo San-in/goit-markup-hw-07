@@ -1,0 +1,41 @@
+h3 {
+    font-size: inherit;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    background: inherit;
+  }
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  address {
+    font-style: normal;
+  }
+  button {
+    cursor: pointer;
+  }

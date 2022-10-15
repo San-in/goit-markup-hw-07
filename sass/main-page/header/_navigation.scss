@@ -1,0 +1,23 @@
+.navigation {
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    line-height: calc(16 / 14);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $textColorBold;
+    
+    @include hover-accent();
+
+  }
+}
+
