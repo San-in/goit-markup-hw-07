@@ -14,8 +14,8 @@ $bgColorAccent:#2196f3;
 
 // Міксіни
 
-@mixin hover-accent ($property:color) {
-            transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@mixin hover-accent ($duration:250ms) {
+            transition: color $duration cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
             color: $textColorAccent;
@@ -29,6 +29,8 @@ $bgColorAccent:#2196f3;
     justify-content: center;
     
 }
+
+// Шаблони
 
 %logo {
     font-family: 'Raleway', sans-serif;
