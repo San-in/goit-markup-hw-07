@@ -1,0 +1,38 @@
+.footer {
+    background-color: $bgColorDarkGrey;
+    padding: 60px 0;
+    &__wrap {
+    display: flex;
+    align-items: baseline;
+    }
+    &__logo {
+    display: inline-block;
+    @extend %logo;
+    margin-bottom: 20px;
+    color: #ffffff;
+    }
+    &__text--accent {
+        color:$textColorAccent
+    }
+}
+.address {
+    margin-right: 70px;
+    &__list {
+        color: #ffffff;
+    }
+}
+.address__link {
+    color:inherit;
+    .address__item:nth-child(n + 2) & {
+        @include hover-accent();
+    }
+}
+
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    &:nth-child(n + 2){
+        opacity: 0.6;
+    }
+}

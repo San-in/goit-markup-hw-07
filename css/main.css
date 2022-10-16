@@ -45,7 +45,7 @@ button {
   cursor: pointer;
 }
 
-.header__logo {
+.footer__logo, .header__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -379,8 +379,6 @@ button {
   height: 100%;
   color: #afb1b8;
   border-radius: 50%;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -389,6 +387,8 @@ button {
   background-color: #2196f3;
 }
 .link-team__vector {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
 }
 
@@ -439,4 +439,50 @@ button {
 }
 .clients__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.footer__text--accent {
+  color: #2196f3;
+}
+
+.address {
+  margin-right: 70px;
+}
+.address__list {
+  color: #ffffff;
+}
+
+.address__link {
+  color: inherit;
+}
+.address__item:nth-child(n+2) .address__link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__item:nth-child(n+2) .address__link:hover, .address__item:nth-child(n+2) .address__link:focus {
+  color: #2196f3;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__item:nth-child(n+2) {
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */

@@ -8,6 +8,7 @@ $colorIcon: #afb1b8;
 
 $bgColorAccent:#2196f3;
 $bgColorGrey: #f5f4fa;
+$bgColorDarkGrey: #2f303a;
 
 
 
@@ -23,15 +24,15 @@ $bgColorGrey: #f5f4fa;
     color: $color;
     }
 }
-@mixin hover-icon ($color:#ffffff,$background:$bgColorAccent) {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        color: $color;
-        background-color: $background;
-    }
-}
+// @mixin hover-icon ($color:#ffffff,$background:$bgColorAccent) {
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover,
+//     &:focus {
+//         color: $color;
+//         background-color: $background;
+//     }
+// }
 @mixin hover-clietns ($color:$textColorAccent,$border:$bgColorAccent) {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

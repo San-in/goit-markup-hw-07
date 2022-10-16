@@ -54,9 +54,9 @@ button {
   --color-white: #ffffff;
   /* забрав */
   --color-bgr-grey: #f5f4fa;
+  --color-bgr-dark: #2f303a;
 
   --color-bgr-lhgt-grey: #f5f5f5;
-  --color-bgr-dark: #2f303a;
 
   /* забрав */
   --basic-cubic: cubic-bezier(0.4, 0, 0.2, 1);
@@ -396,8 +396,8 @@ body {
   width: 44px;
   height: 44px;
 }
-/* забрав */
-.team-link a,
+
+.team-link a,/* забрав */
 .footer-link a {
   display: flex;
   justify-content: center;
@@ -471,14 +471,17 @@ body {
 }
 
 /* Footer */
+/* забрав */
 .footer {
   background-color: var(--color-bgr-dark);
   padding: 60px 0;
 }
+/* забрав */
 .footer-wrap {
   display: flex;
   align-items: baseline;
 }
+/* забрав */
 .footer-address-wrap {
   margin-right: 70px;
 }
@@ -497,24 +500,25 @@ body {
 .footer-link a:focus {
   background-color: var(--color-accent);
 }
-
+/* забрав */
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--color-white);
 }
-
+/* забрав */
 .footer-contact {
   color: var(--color-white);
 }
-
+/* забрав */
 .footer-contact-email {
   opacity: 0.6;
 }
-
+/* забрав */
 .footer-contact-tel {
   opacity: 0.6;
 }
+/* забрав */
 .footer-contact li:not(:last-child) {
   margin-bottom: 9px;
 }

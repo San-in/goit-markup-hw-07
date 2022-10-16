@@ -56,10 +56,18 @@
         color:$colorIcon;
         border-radius: 50%;
 
-        @include hover-icon()
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        color: #ffffff;
+        background-color: $bgColorAccent;
+    }
 
+        
     }
     &__vector {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         fill: currentColor;
+        
     }
 }
