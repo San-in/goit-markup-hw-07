@@ -52,6 +52,11 @@ $bgColorGrey: #f5f4fa;
     background-color: $bgColorAccent;
 }
 
+%imgBlock {
+display: block;
+width: 100%;
+}
+
 // Утилітні класи
 .visually-hidden {
     position: absolute;

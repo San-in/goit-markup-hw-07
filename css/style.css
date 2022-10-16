@@ -234,7 +234,7 @@ body {
 }
 
 .team-img,
-.works-img,
+.works-img, /*забрав*/
 .portfolio-img {
   display: block;
   width: 100%;
@@ -304,20 +304,25 @@ body {
 }
 
 /* Works */
+/* забрав */
 .works.section {
   padding-top: 0;
 }
+/* забрав */
 .works-list {
   display: flex;
   flex-wrap: wrap;
 }
+/* забрав */
 .works-item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
 }
+/* забрав */
 .works-item:not(:last-child) {
   margin-right: 30px;
 }
+/* забрав */
 .works-item-label {
   position: absolute;
   bottom: 0;

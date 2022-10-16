@@ -64,6 +64,11 @@ button {
   background-color: #2196f3;
 }
 
+.works__img {
+  display: block;
+  width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -266,5 +271,39 @@ button {
       flex-basis: calc((100% - 90px) / 4);
 }
 .benefits__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.works {
+  padding-top: 0;
+}
+.works__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.works__label {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.works__item {
+  position: relative;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+}
+.works__item:not(:last-child) {
   margin-right: 30px;
 }/*# sourceMappingURL=main.css.map */

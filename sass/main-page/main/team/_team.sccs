@@ -1,0 +1,25 @@
+.team {
+    &__list {
+    }
+    &__item {
+    }
+    &__img {
+    }
+    &__content {
+    }
+    &__subtitle {
+    }
+    &__description {
+    }
+    &__links {
+    }
+    &__link {
+    }
+}
+
+.link-team {
+    &__item {
+    }
+    &__vector {
+    }
+}
