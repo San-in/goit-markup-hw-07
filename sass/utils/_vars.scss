@@ -4,6 +4,7 @@ $textColorAccent:#2196f3;
 $textColorBold: #212121;
 $textColorMain: #757575;
 
+$colorIcon: #afb1b8;
 
 $bgColorAccent:#2196f3;
 $bgColorGrey: #f5f4fa;
@@ -15,13 +16,32 @@ $bgColorGrey: #f5f4fa;
 
 // Міксіни
 
-@mixin hover-accent ($duration:250ms) {
-            transition: color $duration cubic-bezier(0.4, 0, 0.2, 1);
+@mixin hover-accent ($color:$textColorAccent) {
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
-            color: $textColorAccent;
+            $color: $textColorAccent;
         }
     }
+@mixin hover-icon ($color:#ffffff,$background:$bgColorAccent) {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    color: $color;
+    background-color: $background;
+}
+}
+@mixin hover-clietns ($color:$textColorAccent,$border:$bgColorAccent) {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    color: $color;
+    border-color: $border;
+}
+}
+    
 
 
 @mixin flex-center ($display:flex) {

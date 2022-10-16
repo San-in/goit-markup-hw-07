@@ -47,7 +47,7 @@ button {
   --color-accent: #2196f3;
   --color-bold: #212121;
   --color-main: #757575;
-
+  /* забрав */
   --color-icon: #afb1b8;
 
   --color-black: #000000;
@@ -343,23 +343,26 @@ body {
 }
 
 /* Team */
-
+/* забрав */
 .team {
   background-color: var(--color-bgr-grey);
 }
+/* забрав */
 .team-list {
   display: flex;
 }
+/* забрав */
 .team-item {
   flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+/* забрав */
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-
+/* забрав */
 .team-subtitle {
   margin-bottom: 10px;
 
@@ -368,13 +371,13 @@ body {
   font-weight: 500;
   color: var(--color-bold);
 }
-
+/* забрав */
 .team-description {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: calc(19 / 16);
 }
-
+/* забрав */
 .team-text {
   background-color: var(--color-white);
   padding: 30px;
@@ -383,17 +386,17 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-links,
+.team-links, /* забрав */
 .footer-links {
   display: flex;
   justify-content: center;
 }
-.team-link,
+.team-link, /* забрав */
 .footer-link {
   width: 44px;
   height: 44px;
 }
-
+/* забрав */
 .team-link a,
 .footer-link a {
   display: flex;
@@ -406,39 +409,41 @@ body {
 
   transition: color 250ms var(--basic-cubic), background-color 250ms var(--basic-cubic);
 }
-
+/* забрав */
 .team-link a:hover,
 .team-link a:focus {
   color: var(--color-white);
   background-color: var(--color-accent);
 }
-
+/* забрав */
 .team-link a {
   color: var(--color-icon);
 }
-.team-link-vector,
+.team-link-vector, /* забрав */
 .footer-link-vector {
   fill: currentColor;
 }
-.team-link:not(:last-child),
+.team-link:not(:last-child), /* забрав */
 .footer-link:not(:last-child) {
   margin-right: 10px;
 }
 
 /* Clients */
-
+/* забрав */
 .clients-list {
   display: flex;
   justify-content: center;
 }
+/* забрав */
 .clients-item {
   width: 170px;
   height: 92px;
 }
+/* забрав */
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
-
+/* забрав */
 .clients-item a {
   display: flex;
   justify-content: center;
@@ -454,11 +459,13 @@ body {
 
   transition: color 250ms var(--basic-cubic), border-color 250ms var(--basic-cubic);
 }
+/* забрав */
 .clients-item a:hover,
 .clients-item a:focus {
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
+/* забрав */
 .clients-item-vector {
   fill: currentColor;
 }
