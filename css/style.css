@@ -233,9 +233,10 @@ body {
   fill: currentColor;
 }
 
-.team-img,
+.team-img, /*забрав*/
 .works-img, /*забрав*/
 .portfolio-img {
+  /*!!!!!!!!!!!!!*/
   display: block;
   width: 100%;
 }
@@ -388,17 +389,20 @@ body {
 
 .team-links, /* забрав */
 .footer-links {
+  /* забрав */
   display: flex;
   justify-content: center;
 }
 .team-link, /* забрав */
 .footer-link {
+  /* забрав */
   width: 44px;
   height: 44px;
 }
 
 .team-link a,/* забрав */
 .footer-link a {
+  /* забрав */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,10 +425,12 @@ body {
 }
 .team-link-vector, /* забрав */
 .footer-link-vector {
+  /* забрав */
   fill: currentColor;
 }
 .team-link:not(:last-child), /* забрав */
 .footer-link:not(:last-child) {
+  /* забрав */
   margin-right: 10px;
 }
 
@@ -485,17 +491,19 @@ body {
 .footer-address-wrap {
   margin-right: 70px;
 }
+/* забрав */
 .footer-link-text {
   display: inline-block;
   margin-bottom: 20px;
   line-height: calc(24 / 14);
   text-transform: uppercase;
   color: var(--color-white);
-}
+} /* забрав */
 .footer-link a {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--color-white);
 }
+/* забрав */
 .footer-link a:hover,
 .footer-link a:focus {
   background-color: var(--color-accent);
@@ -524,15 +532,16 @@ body {
 }
 
 /* Footer-form */
-
+/* забрав */
 .footer-form-wrap {
   margin-left: auto;
 }
+/* забрав */
 .footer-form {
   display: flex;
   gap: 12px;
 }
-
+/* забрав */
 .footer-form-label {
   display: block;
   margin-bottom: 20px;
@@ -541,6 +550,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+/* забрав */
 .footer-form input {
   min-width: 358px;
   padding: 15px 16px;
@@ -553,7 +563,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
+/* забрав */
 .footer-btn {
   display: flex;
   justify-content: center;
@@ -565,7 +575,7 @@ body {
 }
 
 /* Modal-page */
-
+/* забрав */
 .modal-page {
   position: fixed;
   top: 0;
@@ -575,6 +585,7 @@ body {
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--basic-cubic), visibility 250ms var(--basic-cubic);
 }
+/* забрав */
 .modal-form {
   position: absolute;
   top: 50%;
@@ -588,7 +599,7 @@ body {
 
   background-color: var(--color-white);
 }
-
+/* забрав */
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -603,17 +614,18 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.modal-close-btn,
+.modal-close-btn, /* забрав */
 .form-label-icon {
   fill: currentColor;
   background-color: transparent;
   transition: color 250ms var(--basic-cubic);
 }
+/* забрав */
 .modal-btn:hover,
 .modal-btn:focus {
   color: var(--color-accent);
 }
-
+/* забрав */
 .modal-form-title {
   margin-bottom: 30px;
   font-size: 20px;
@@ -751,7 +763,7 @@ body {
   color: var(--color-accent);
   text-decoration: underline;
 }
-
+/* забрав */
 .modal-form-btn {
   padding: 10px 52px;
 }
