@@ -1,0 +1,27 @@
+.form-field-textarea {
+  margin-bottom: 20px;
+  &__label {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+}
+.form-field-textarea__input {
+  height: 120px;
+  margin-top: 4px;
+  padding: 16px 12px;
+
+  color: $textColorMain;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+
+  transition: border-color 250ms $basicCubic;
+  &::placeholder {
+    color: hsla(0, 0%, 46%, 0.5);
+  }
+  &:focus {
+    border-color: $textColorAccent;
+  }
+}

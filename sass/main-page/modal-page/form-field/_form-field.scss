@@ -1,0 +1,49 @@
+.form-field {
+    position: relative;
+    margin-bottom: 28px;
+    &:nth-child(3) {
+      margin-bottom: 10px;
+    }
+    
+}
+
+.form-field__input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+
+  color: $textColorMain;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms $basicCubic;
+  &:focus {
+    border-color: $textColorAccent;
+  }
+}
+.form-field__text {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: transform 250ms $basicCubic;
+  .form-field:focus-within &,
+  .form-field__input:not(:placeholder-shown) + .form-field__label > & {
+    transform: translate(-42px, -38px);
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  fill: currentColor;
+  color: $textColorBold;
+  background-color: transparent;
+  transition: color 250ms $basicCubic;
+  .form-field:focus-within & {
+    color: $textColorAccent;
+  }
+}

@@ -636,6 +636,160 @@ button {
   line-height: 1.15;
   color: #212121;
 }
+.modal-form__content {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+}
 .modal-form__btn {
   padding: 10px 52px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+}
+.form-field:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.form-field__input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+  color: #757575;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field__input:focus {
+  border-color: #2196f3;
+}
+
+.form-field__text {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field__input:not(:-moz-placeholder-shown) + .form-field__label > .form-field__text {
+  transform: translate(-42px, -38px);
+}
+.form-field__input:not(:-ms-input-placeholder) + .form-field__label > .form-field__text {
+  transform: translate(-42px, -38px);
+}
+.form-field:focus-within .form-field__text, .form-field__input:not(:placeholder-shown) + .form-field__label > .form-field__text {
+  -webkit-transform: translate(-42px, -38px);
+          transform: translate(-42px, -38px);
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: currentColor;
+  color: #212121;
+  background-color: transparent;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field:focus-within .form-field__icon {
+  color: #2196f3;
+}
+
+.form-field-textarea {
+  margin-bottom: 20px;
+}
+.form-field-textarea__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: start;
+}
+
+.form-field-textarea__input {
+  height: 120px;
+  margin-top: 4px;
+  padding: 16px 12px;
+  color: #757575;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field-textarea__input::-webkit-input-placeholder {
+  color: hsla(0deg, 0%, 46%, 0.5);
+}
+.form-field-textarea__input::-moz-placeholder {
+  color: hsla(0deg, 0%, 46%, 0.5);
+}
+.form-field-textarea__input:-ms-input-placeholder {
+  color: hsla(0deg, 0%, 46%, 0.5);
+}
+.form-field-textarea__input::-ms-input-placeholder {
+  color: hsla(0deg, 0%, 46%, 0.5);
+}
+.form-field-textarea__input::placeholder {
+  color: hsla(0deg, 0%, 46%, 0.5);
+}
+.form-field-textarea__input:focus {
+  border-color: #2196f3;
+}
+
+.checkbox {
+  position: relative;
+  padding: 0 12px;
+  height: 24px;
+  margin-bottom: 30px;
+}
+.checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 23px;
+}
+.checkbox__text {
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+}
+.checkbox__link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.checkbox__input--customize {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: -23px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/checkbox-off.svg);
+  background-position: center;
+  background-size: contain;
+  -webkit-transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox__input:checked + .checkbox__label > .checkbox__input--customize {
+  background-image: url(../images/checkbox-on.svg);
 }/*# sourceMappingURL=main.css.map */

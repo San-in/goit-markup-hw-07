@@ -43,6 +43,11 @@
     
       color: $textColorBold;
 		}
+    &__content {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.01em;
+    }
     &__btn {
       @extend %btn;
       padding: 10px 52px;

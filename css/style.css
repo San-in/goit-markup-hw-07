@@ -615,7 +615,7 @@ body {
   border-radius: 50%;
 }
 .modal-close-btn, /* забрав */
-.form-label-icon {
+.form-label-icon /* ???? */ {
   fill: currentColor;
   background-color: transparent;
   transition: color 250ms var(--basic-cubic);
@@ -633,6 +633,7 @@ body {
 
   color: var(--color-bold);
 }
+/* забрав */
 .modal-form-item {
   width: 100%;
 
@@ -640,13 +641,16 @@ body {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 }
+/* забрав */
 .form-field {
   position: relative;
   margin-bottom: 28px;
 }
+/* забрав */
 .modal-form-item div:nth-child(3) {
   margin-bottom: 10px;
 }
+/* забрав */
 .form-input {
   display: block;
   height: 40px;
@@ -659,11 +663,11 @@ body {
   transition: border-color 250ms var(--basic-cubic);
 }
 
-.form-input:focus,
-.form-label-comment > textarea:focus {
+.form-input:focus, /* забрав */
+.form-label-comment > textarea:focus /* забрав */ {
   border-color: var(--color-accent);
 }
-
+/* забрав */
 .form-label-text {
   position: absolute;
   top: 50%;
@@ -671,12 +675,12 @@ body {
   transform: translateY(-50%);
   transition: transform 250ms var(--basic-cubic);
 }
-
+/* забрав */
 .form-field:focus-within .form-label-text,
 .form-input:not(:placeholder-shown) + .form-label > .form-label-text {
   transform: translate(-42px, -38px);
 }
-
+/* забрав */
 .form-label-icon {
   position: absolute;
   top: 50%;
@@ -687,20 +691,21 @@ body {
   color: var(--color-bold);
   transition: fill 250ms var(--basic-cubic);
 }
-
+/* забрав */
 .form-field:focus-within .form-label-icon {
   color: var(--color-accent);
 }
-
+/* забрав */
 .form-field-comment {
   margin-bottom: 20px;
 }
-
+/* забрав */
 .form-label-comment {
   display: flex;
   flex-direction: column;
   text-align: start;
 }
+/* забрав */
 .form-label-comment > textarea {
   height: 120px;
   margin-top: 4px;
@@ -714,22 +719,25 @@ body {
 
   transition: border-color 250ms var(--basic-cubic);
 }
+/* забрав */
 .form-label-comment > textarea::placeholder {
   color: hsla(0, 0%, 46%, 0.5);
 }
-
+/* забрав */
 .checkbox {
   position: relative;
   padding: 0 12px;
   height: 24px;
   margin-bottom: 30px;
 }
+/* забрав */
 .checkbox-label {
   display: flex;
   height: 100%;
   align-items: center;
   padding-left: 23px;
 }
+/* забрав */
 .checkbox-input-customize {
   position: absolute;
   top: 50%;
@@ -750,15 +758,17 @@ body {
   border: 2px solid var(--color-accent);
   
 } */
+/* забрав */
 .checkbox-input:checked + .checkbox-label > .checkbox-input-customize {
   background-image: url(../images/checkbox-on.svg);
 }
+/* забрав */
 .checkbox-text {
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
 }
-
+/* забрав */
 .checkbox-text a {
   color: var(--color-accent);
   text-decoration: underline;
