@@ -1,22 +1,27 @@
 @import 'utils/null';
-@import 'utils/vars';
-@import 'common-classes/common-classes';
+@import 'utils/variables';
+@import 'components/common-classes/common-classes';
 
-@import 'main-page/header/header-logo';
-@import 'main-page/header/navigation';
-@import 'main-page/header/header-contact';
 
-@import 'main-page/main/hero/hero';
-@import 'main-page/main/benefits/benefits';
-@import 'main-page/main/works/works';
-@import 'main-page/main/team/team';
-@import 'main-page/main/clients/clients';
+@import 'components/main-page/header/header-contact/header-contact';
+@import 'components/main-page/header/navigation/navigation';
+@import 'components/main-page/header/header-logo/header-logo';
 
-@import 'main-page/footer/address/address';
-@import 'main-page/footer/footer-links/footer-links';
-@import 'main-page/footer/footer-form/footer-form';
+@import 'components/main-page/main/hero/hero';
+@import 'components/main-page/main/benefits/benefits';
+@import 'components/main-page/main/works/works';
+@import 'components/main-page/main/team/team';
+@import 'components/main-page/main/clients/clients';
 
-@import 'main-page/modal-page/modal-form/modal-form';
-@import 'main-page/modal-page/form-field/form-field';
-@import 'main-page/modal-page/form-field-textarea/form-field-textarea';
-@import 'main-page/modal-page/checkbox/checkbox';
+@import 'components/main-page/footer/address/address';
+@import 'components/main-page/footer/footer-links/footer-links';
+@import 'components/main-page/footer/footer-form/footer-form';
+
+@import 'components/main-page/modal-page/modal-form/modal-form';
+@import 'components/main-page/modal-page/form-field/form-field';
+@import 'components/main-page/modal-page/form-field-textarea/form-field-textarea';
+@import 'components/main-page/modal-page/checkbox/checkbox';
+
+
+@import 'components/portfolio-page/main/portfolio-filter/portfolio-filter';
+@import 'components/portfolio-page/main/gallery/gallery';
