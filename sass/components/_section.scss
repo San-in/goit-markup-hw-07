@@ -1,0 +1,11 @@
+.section {
+    padding: 94px 0;
+    &__title {
+      margin-bottom: 50px;
+  
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      text-align: center;
+      color: $textColorBold;
+    }
+  }

@@ -1,0 +1,33 @@
+@mixin hover-accent ($color:$textColorAccent) {
+    transition: color 250ms $basicCubic;
+    &:hover,
+    &:focus {
+    color: $color;
+    }
+}
+@mixin hover-icon ($color:#ffffff,$background:$bgColorAccent) {
+    transition: color 250ms $basicCubic, background-color 250ms $basicCubic;
+    &:hover,
+    &:focus {
+        color: $color;
+        background-color: $background;
+    }
+}
+@mixin hover-clietns ($color:$textColorAccent,$border:$bgColorAccent) {
+    transition: color 250ms $basicCubic;
+    transition: background-color 250ms $basicCubic;
+&:hover,
+&:focus {
+    color: $color;
+    border-color: $border;
+}
+}
+    
+
+
+@mixin flex-center ($display:flex) {
+    display: $display;
+    align-items: center;
+    justify-content: center;
+    
+}
