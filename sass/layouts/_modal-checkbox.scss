@@ -8,6 +8,7 @@
     height: 100%;
     align-items: center;
     padding-left: 23px;
+    transition: color 250ms $basicCubic 1s;
   }
   &__text {
     font-size: 14px;
@@ -23,17 +24,27 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
+  color:$textColorBold;
   margin-left: -23px;
-  width: 16px;
-  height: 15px;
-
-  background-image: url(../images/checkbox-off.svg);
-  background-position: center;
-  background-size: contain;
-
-  transition: background-image 250ms $basicCubic;
-  .checkbox__input:checked + .checkbox__label > & {
-    background-image: url(../images/checkbox-on.svg);
+}
+.checkbox__on {
+  opacity: 0;
+  transition: opacity 250ms $basicCubic;
+  .checkbox__input:checked + .checkbox__label  & {
+    opacity: 1;
   }
+}
+.checkbox__off {
+  fill:currentColor;
+  transition: opacity 250ms $basicCubic,color 250ms $basicCubic;
+
+  
+  .checkbox__input:focus + .checkbox__label  &,.checkbox__label:active  & {
+    color:$textColorAccent;
+  }
+  .checkbox__input:checked + .checkbox__label  & {
+    opacity: 0
+  }
+  
+  
 }
